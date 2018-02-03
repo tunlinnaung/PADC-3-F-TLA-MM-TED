@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_topics_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginBottom="@dimen/margin_small"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_topics_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/topics_item_background"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_topic_overview"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:text="The suprising thing I learned sailing solo around the world"
+            android:textColor="@color/whitefull"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_topic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:47"
+            android:textColor="@color/whitefull"
+            android:textSize="@dimen/text_regular"
+            android:layout_alignRight="@id/tv_topic_overview"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium"
+            />
+
+        <TextView
+            android:id="@+id/tv_topic_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dame Ellen MacArthur"
+            android:layout_above="@id/tv_topic_overview"
+            android:layout_alignLeft="@id/tv_topic_overview"
+            android:textColor="@color/whitefull"
+            android:textSize="@dimen/text_regular_2x"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_24dp"
+            android:layout_above="@id/tv_topic_time"
+            android:layout_alignBottom="@id/tv_topic_author"
+            android:layout_alignRight="@id/tv_topic_time"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

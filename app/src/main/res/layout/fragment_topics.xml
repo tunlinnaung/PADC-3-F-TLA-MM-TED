@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_topics_tips"
+        android:layout_width="match_parent"
+        android:layout_height="108dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_topics_subcategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_medium_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Newest"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Trending"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Most viewed"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Hidden gems"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ll_topics_subcategories"
+                android:background="@color/divider"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_highlight_24dp"
+                    android:text="Tip: You can continue playing a talk while on another screen or app. Enable background playback in Settings."
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:drawablePadding="@dimen/margin_medium"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_24dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_ted_by_topics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_topics_tips"/>
+
+</RelativeLayout>
